@@ -51,3 +51,4 @@ cd leetcode-cli
 sudo ./bin/install  
 leetcode version  
 ```
+感谢前人的工作
