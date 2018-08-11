@@ -1,5 +1,5 @@
 # leetcode-desktop
-这份文档将帮助你在终端搭建连接 leetcode.com 的服务
+这份文档将帮助你在 ubuntu16.04_x64 位的终端上搭建连接 leetcode.com 的服务
 
 ## 1 安装 npm 和 nodejs
 ```Bash
@@ -8,7 +8,7 @@ npm -v # 查看版本
 ```
 ```Bash
 sudo npm install -g n # 安装用于安装 nodejs 的模块 n  
-sudo n stable
+sudo n stable # 稳定版本的 nodejs
 ```
 如果报错：  
 ```Bash
@@ -37,4 +37,17 @@ mv npm/ /tmp/usr_local_lib_node_modules_npm
 ```Bash
 sudo npm install -g n # 安装用于安装 nodejs 的模块 n  
 sudo n stable
+```
+不要按照如下方式安装  
+```Bash
+sudo apt install nodejs-legacy  
+sudo apt install npm  
+```
+## 2 安装leetcode-cli
+可以从 npm, github, source, docker 安装，建议从源码安装  
+```Bash
+git clone http://github.com/skygragon/leetcode-cli  
+cd leetcode-cli  
+sudo ./bin/install  
+leetcode version  
 ```
