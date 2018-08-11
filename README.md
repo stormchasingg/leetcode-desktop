@@ -44,6 +44,11 @@ sudo apt install nodejs-legacy
 sudo apt install npm  
 ```
 ## 2 安装leetcode-cli
+先检查 npm, node, 出现版本号则继续  
+```Bash
+npm -v  
+node -v  
+```
 可以从 npm, github, source, docker 安装，建议从源码安装  
 ```Bash
 git clone http://github.com/skygragon/leetcode-cli  
