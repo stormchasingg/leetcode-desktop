@@ -1,3 +1,4 @@
+'''
 class Solution:
     def twoSum(self, nums, target):
         """
@@ -12,3 +13,16 @@ class Solution:
                     result.append(i)
                     result.append(j)
                     return result
+'''
+class Solution(object):
+    def twoSum(self, nums, target):
+        size = 0
+        d = {}
+        while size < len(nums):
+            if not nums[size] in d:
+                d[nums[size]] = size
+            if target - nums[size] in d:
+                if d[target - nums[size]] < d[nums[size]]:
+                    result = [d[target - nums[size]], d[nums[size]]]
+                    return result
+            size = size + 1
