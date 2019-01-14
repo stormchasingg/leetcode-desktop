@@ -1,4 +1,4 @@
-# leetcode-desktop
+# leetcode-desktop (还是网页好用)
 这份文档将帮助你在 ubuntu16.04_x64 位的终端上搭建连接 leetcode.com 的服务
 
 ## 1 安装 npm 和 nodejs
