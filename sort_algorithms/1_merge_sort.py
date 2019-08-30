@@ -16,10 +16,8 @@ def merge(left, right):
 def merge_sort(nums):
     if len(nums) <= 1:
         return nums
-    i = len(nums) >> 1
-    left = merge_sort(nums[:i])
-    right = merge_sort(nums[i:])
-    return merge(left, right)
+    i = len(nums) // 2
+    return merge(merge_sort(nums[:i]), merge_sort(nums[i:]))
 
 
 if __name__ == '__main__':
