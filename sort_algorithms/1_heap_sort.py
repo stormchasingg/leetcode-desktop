@@ -13,13 +13,14 @@ def adjust_heap(nums, i, size):
 
 
 def build_heap(nums, size):
-    for i in range(size // 2, -1, -1):
+    for i in range(size // 2 - 1, -1, -1):
         adjust_heap(nums, i, size)
 
 
 def heap_sort(nums):
     size = len(nums)
-    for i in range(size-1, 0, -1):
+    build_heap(nums, size)
+    for i in range(size - 1, 0, -1):
         nums[0], nums[i] = nums[i], nums[0]
         adjust_heap(nums, 0, i)
 
