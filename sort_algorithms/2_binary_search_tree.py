@@ -25,7 +25,7 @@ class BST:
         if num == node.val:
             return True, node, parent
         elif num < node.val:
-            return self.search(node.left, node, num)
+            return self.search(node.left, node, num)  # 尾递归
         elif num > node.val:
             return self.search(node.right, node, num)
 
